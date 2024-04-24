@@ -1,0 +1,52 @@
+In C programming, operators are symbols that tell the compiler to perform specific mathematical, relational, or logical operations and produce a result. They are fundamental to manipulating data and variables in C. Here’s a closer look at the types of operators in C:
+
+Arithmetic Operators
++ Addition: Adds two operands.
+- Subtraction: Subtracts the second operand from the first.
+* Multiplication: Multiplies two operands.
+/ Division: Divides the first operand by the second (integer division if both operands are integers).
+% Modulus: Returns the remainder of division of two integers.
+
+Relational Operators
+== Equal to: True if two operands are equal.
+!= Not equal to: True if two operands are not equal.
+> Greater than: True if the first operand is greater than the second.
+< Less than: True if the first operand is less than the second.
+>= Greater than or equal to: True if the first operand is greater than or equal to the second.
+<= Less than or equal to: True if the first operand is less than or equal to the second.
+
+Logical Operators
+&& Logical AND: True if both operands are true.
+|| Logical OR: True if at least one of the operands is true.
+! Logical NOT: True if the operand is false, and vice versa.
+
+Assignment Operators
+= Assignment: Assigns the right operand's value to the left operand.
++=, -=, *=, /=, %= Modify and assign: Perform the operation and assign the result to the left operand (e.g., x += y is equivalent to x = x + y).
+
+Increment and Decrement Operators
+++ Increment: Increases an integer's value by 1.
+-- Decrement: Decreases an integer's value by 1.
+These can be pre-fix (e.g., ++x) or post-fix (e.g., x++), affecting when the operation is applied in expressions.
+
+Bitwise Operators
+& AND: Performs bitwise AND on two integers.
+| OR: Performs bitwise OR on two integers.
+^ XOR: Performs bitwise exclusive OR on two integers.
+~ NOT: Performs bitwise NOT on an integer.
+<< Left shift: Shifts the bits of the first operand left by the number of positions specified by the second operand.
+>> Right shift: Shifts the bits of the first operand right by the number of positions specified by the second operand.
+
+Special Operators
+sizeof: Returns the size of a data type or a variable in bytes.
+& (Address of): Returns the memory address of a variable.
+* (Pointer dereference): Accesses the value at a specified memory address.
+
+Conditional Statement
+Conditional Statements in C programming are used to make decisions based on the conditions. Conditional statements execute sequentially when there is no condition around the statements. If you put some condition for a block of statements, the execution flow may change based on the result evaluated by the condition. This process is called decision making in ‘C.’
+
+We have four variants of if-else statements in C. They are
+if statement in C
+if-else statement in C
+if else-if ladder in C
+nested if statement in C
