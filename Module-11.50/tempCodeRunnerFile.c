@@ -1,0 +1,1 @@
+        printf("%s\n", arr[i])
