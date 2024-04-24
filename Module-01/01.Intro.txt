@@ -1,0 +1,161 @@
+- Why C programming?
+The first structured programming language, which was introduced by Dennis Ritchie at Bell Laboratories in 1972, is C. It is regarded as a fundamental or mother of programming languages in the field of computer science because it laid the foundation for other programming languages. Other languages were created based on C programming.
+
+C is a general-purpose, procedural, high-level programming language used in the development of computer software and applications, system programming, games, and more.
+
+It is a powerful and flexible language which was first developed for the programming of the UNIX operating System.
+
+If we know C, we will have no problem learning other popular programming languages such as Java, Python, C++, and C#, as the syntax has similarities.
+
+C++ is an updated version of C. However, it's not accurate to say that Python and JavaScript were built based on the structure of C; they were influenced by C in terms of syntax and programming principles but were designed independently with different philosophies and goals.
+
+Understanding C helps a programmer comprehend computer functionality and programming fundamentals.
+
+Difference Between C and C++
+C++ was created to add the OOPs concept into C language so they both have very similar syntax but both are a bit different from each other. Following are some main differences between C and C++ Programming language.
+
+C++ supports OOPs paradigm while C only have procedural concept of programming.
+C++ have exception handling capablities. In C, we have to resolve manually.
+There are no references in C.
+
+- Basic structure of c programming
+a) Head: It consists of header files which transacts signals. In C programming, before we write our main code, we need to include "header files. Header files are like toolboxes. They give us access to special commands or functions that we can use in your program. For example, if we want to display a message or do math operations, we need the tools to do so.
+Example: Writing #include <stdio.h> at the top of your program is like saying, "I need the toolbox that lets me display messages.
+
+b) Body: Rest of the codes are kept in the body part. Every C program has a starting point, called the main() function. Think of it as the entry door to a house. The program starts running from here. Inside main(), we write what we want our program to do. It can be anything from solving a math problem to creating a file on your computer.
+
+
+---- <stdio.h>
+
+<stdio.h> is a header file in the C standard library that stands for "Standard Input/Output." It provides functionalities for performing input and output operations in C programs. This header file contains definitions of macros, constants, and declarations of functions and types used not only for file handling but also for various other input/output tasks.
+
+The followings are perhaps the most well-known features of stdio.h. It includes functions to read input from the keyboard and write output to the console or terminal.
+
+a) printf: Used for output, it prints formatted text to the standard output (usually in our screen).
+b) scanf: Used for input, it reads formatted input from the standard input (usually in our keyboard).
+
+Functions: A function is a block of code designed to perform a specific task. Functions are fundamental to structured programming, allowing code to be reused, organized, and managed more efficiently. 
+
+We see two types of function:
+i) User defined function: Functionality Defined by user; and it works following the definition of User. 
+ii) Built in function: Pre-defined in programming languages standard library and are readily available for use without needing the programmer to define them. These functions are designed to perform common, often complex tasks that are fundamental to many programming activities. 
+
+Main function: In C programming, the main function is the entry point of any C program. It's where the execution of the program begins. The operating system calls the main function when the program starts, and the code inside main dictates the program's behavior. Here's a closer look:
+
+Mandatory: Every C program must have one and only one main function. It's essential for program execution.
+Return Type: Typically returns an int value, which is used as an exit status code. A return value of 0 usually indicates successful execution, whereas non-zero values indicate different types of errors or exit conditions, as defined by the programmer or by convention.
+
+int main() {
+    // Your code here
+    return 0; // Indicates successful completion
+}
+
+int: This specifies the return type of the main function as an integer.
+main: This is the name of the function. In C, the execution of a program starts from the main function.
+(): These parentheses can optionally include arguments for command-line input processing (int argc, char *argv[]), but in the simplest form, they're empty or contain void to explicitly state that main takes no arguments.
+{...}: The code block where the instructions of the program are written.
+Upon completion, main returns an integer value to the operating system. The convention is to return 0 to indicate that the program executed successfully, and non-zero values to indicate different types of errors or abnormal termination, though the specific meanings of non-zero values can vary.
+
+Semicolon: In C programming, the semicolon (;) plays a crucial role as a statement terminator. It is used to mark the end of a statement, signaling to the compiler that a particular instruction or command has concluded. This allows for the separation of multiple statements on the same line and helps the compiler understand the structure and sequence of the program's operations. printf("   ");
+
+Header files and library with built in functionality: When you write a C program that includes a header file (for example, #include <stdio.h>), you are telling the compiler that you intend to use the functions declared in that header file. During the linking stage of compilation, the compiler or linker then searches the libraries on your system to find the actual implementations of these functions. For standard C library functions, the implementations are typically found in the C Standard Library, which is automatically linked with your program by the compiler.
+
+Special character: 
+\n: New line
+\t: Horizontal tab
+\\: Backslash (\)
+\": Double quote (")
+\r: Carriage return
+\b: Backspace
+
+In c programming backslash (\ and %) never works alone. So, you have to use to use both of the symbols two times to show them in the UI.
+
+Variable: A variable in programming is like a container that consists of data. It is defined by specifying its type, which determines the kind of data it can hold, and a name, which is used to identify and access its contents. The data stored in a variable can be modified throughout the program's execution, making variables fundamental for storing and manipulating information in software development.
+
+Data: Data refers to the individual pieces of information that are processed, stored, and manipulated by a computer program. In the context of programming, data can take various forms, such as numbers, text, boolean values (true or false), and complex structures like arrays and objects. The type of data determines what kind of operations can be performed on it and how it is stored in memory. Data is essential for enabling programs to perform tasks, make decisions, and interact with users or other systems.
+
+Primitive data type:
+- Integer (int): Represents whole numbers, both positive and negative.
+- Floating Point (float): Used for real numbers (numbers with fractional parts).
+- Character (char): Represents a single character, like 'a' or '4', using character encoding (such as ASCII).
+- Boolean (bool): Represents truth values, typically true and false.
+- Double Precision Floating Point (double): Offers more precision for real numbers than float.
+
+Relationship between Data and Variable: Variables in programming are intrinsically tied to data types, emphasizing a dependent relationship where the data type dictates the characteristics and behavior of the variable. This dependency necessitates defining the data type of a variable prior to or during its declaration for several foundational reasons:
+
+1. Memory allocation
+2. Kind of data it hold
+3. Permissioble operations
+4. Data integrity
+5. Consistency and predictability
+
+Declaring variable: declaring a variable requires to specify the type of the variable followed by its name. For example
+int age;
+float weight;
+char grade;
+
+Format specifier: In C programming, format specifiers are used within a string to define how different types of data should be formatted and displayed when outputting using functions like printf or read when inputting with functions like scanf. Each format specifier starts with a percent sign (%), followed by a character that represents the type of data to be formatted. Here's a list of common format specifiers and their corresponding data types:
+
+Common Format Specifiers
+%d or %i: Signed integer
+%u: Unsigned integer
+%f: Floating-point number (float or double)
+%lf: Double precision floating-point number (used with printf; for scanf, use %lf for reading into a double)
+%c: Single character
+%s: String (array of characters)
+%p: Pointer (prints the memory address held by a pointer variable)
+%x or %X: Unsigned hexadecimal integer
+%o: Unsigned octal integer
+%%: Literal percent sign (used to print a % character)
+
+How to take input?
+In C programming, taking input from the user is commonly done using the scanf function, which is part of the C standard library. The scanf function reads formatted input from the standard input (usually the keyboard).
+
+scanf("format specifier", &variable);
+
+& is called ampersand
+
+"format specifier": Tells scanf what type of data is being read. It should match the type of the variable where the input is stored.
+&variable: The address of the variable where the input data will be stored. The ampersand (&) is used to obtain the variable's address, except for strings.
+
+
+Data type limitations:
+Integer Types
+int: 4 bytes (32 bits), range -2,147,483,648 to 2,147,483,647. unsigned int doubles max value, losing negative range.
+short: 2 bytes (16 bits), range -32,768 to 32,767. unsigned short range is 0 to 65,535.
+long: 4 or 8 bytes (32 or 64 bits), with 64-bit range being -9,223,372,036,854,775,808 to 9,223,372,036,854,775,807. unsigned long has large max value.
+Floating-Point Types
+float: 6-7 decimal digits precision, range ~1.2E-38 to 3.4E+38.
+double: ~15-16 decimal digits precision, range ~2.3E-308 to 1.7E+308.
+long double: More precision and range than double, varies by system.
+Character Types
+char: 1 byte (8 bits), range 0 to 255 for unsigned char and -128 to 127 for signed char. Used for characters (ASCII).
+
+Bit: A bit is the smallest unit of data in a computer and can hold a value of either 0 or 1. You can think of a bit like a light switch, which can be either off (0) or on (1). Bits are the building blocks of all digital data, and when grouped together, they can represent more complex information. For example, 8 bits make up a byte, which can represent numbers, letters, or symbols in computer systems.
+
+Byte: A byte is a basic unit of information in computers. It's like a single cell that can store a small piece of data. Imagine a byte as a set of 8 switches, each of which can be either off (0) or on (1). By turning these switches on or off in different combinations, you can represent 256 different values. This is how computers store and use information, from the letters you type to the pictures you see on the screen.
+
+Rules for naming variables:
+1. Variable name must start with a letter or underscore;
+2. Variable name must contain letter, digits or underscore;
+3. Keywords can't be used as variables;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+i) Print
+ii) Input
+iii) Variable and data type
+iv) Data type limitations
+v) Rules for variable names
