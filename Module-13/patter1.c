@@ -2,16 +2,26 @@
 
 int main()
 {
-    int n, k = 1;
-    scanf("%d", &n);
+    int n;
+    scanf("%d", &n); // Read the total number of lines for the pattern
 
-    for (int i = 0; i < n; i++)
+    // Print increasing pattern
+    for (int i = 1; i <= n; i++)
     {
-        for (int j = 0; j < k; j++)
+        for (int j = 0; j < i; j++)
         {
             printf("*");
         }
-        k++;
+        printf("\n");
+    }
+
+    // Print decreasing pattern
+    for (int i = n - 1; i > 0; i--)
+    {
+        for (int j = 0; j < i; j++)
+        {
+            printf("*");
+        }
         printf("\n");
     }
 
