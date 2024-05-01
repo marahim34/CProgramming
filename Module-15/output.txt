@@ -1,0 +1,4 @@
+x er value - 100.00
+x er value - 100.00
+ptr er size - 4 bytes
+x er size - 8 bytes
