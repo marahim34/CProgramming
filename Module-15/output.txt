@@ -1,4 +1,4 @@
-x er value - 100.00
-x er value - 100.00
-ptr er size - 4 bytes
-x er size - 8 bytes
+Address of main x - 0061FF1C
+Address of fun x - 0061FF00
+10value of fun x = 500
+value of main x = 10
