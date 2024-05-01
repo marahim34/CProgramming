@@ -1,4 +1,5 @@
-Address of main x - 0061FF1C
-Address of fun x - 0061FF00
-10value of fun x = 500
-value of main x = 10
+address of main x - 0061FF1C
+value of main x - 10
+value of fun x - 0061FF1C
+value of fun x - 300
+value of main x - 300
