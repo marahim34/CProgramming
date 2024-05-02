@@ -1,5 +1,11 @@
-address of main x - 0061FF1C
-value of main x - 10
-value of fun x - 0061FF1C
-value of fun x - 300
-value of main x - 300
+value of 0 index - 10
+address of 0 index - 0061FF0C
+address of 0 index - 0061FF0C
+address of 0 index - 0061FF10
+value of 0 index - 10
+Value of first index - 20
+Value of first index - 20
+20
+20
+20
+20
