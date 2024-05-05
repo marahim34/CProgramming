@@ -3,6 +3,7 @@
 void fun()
 {
     printf("Fun\n");
+    // fun();
 }
 
 #include <stdio.h>
