@@ -2,15 +2,15 @@
 
 void fun(int i)
 {
-    if (i == 0)
+    if (i == 10)
         return; // base case
+    fun(i + 1);
     printf("%d\n", i);
-    fun(i - 1);
 }
 
 int main()
 {
-    fun(10);
+    fun(1);
 
     return 0;
 }
