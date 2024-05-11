@@ -5,12 +5,21 @@ int main()
     long long n, k, a;
     scanf("%lld %lld %lld", &n, &k, &a);
 
-    // Using double to preserve any fractional part if that was a requirement
+    if (a == 0)
+    {
+        return 1;
+    }
+
     double result = (double)n * k / a;
 
-    if (result == (int)result)
+    if (result != (long long)result)
     {
-        if ((int)result >= -2147483648 && (int)result <= 2147483647)
+        printf("double");
+    }
+    else
+    {
+        long long intResult = (long long)result;
+        if (intResult >= -2147483648LL && intResult <= 2147483647LL)
         {
             printf("int");
         }
@@ -18,10 +27,6 @@ int main()
         {
             printf("long long");
         }
-    }
-    else
-    {
-        printf("double");
     }
     return 0;
 }
