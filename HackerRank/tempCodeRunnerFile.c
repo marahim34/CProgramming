@@ -1,4 +1,4 @@
-            // if (i == 1 || j == 1 || j == n - 1 || i == n - 1)
-            // {
-            //     printf("%d ", n - 1);
-            // }
+            else
+            {
+                distance = size - j + 1;
+            }

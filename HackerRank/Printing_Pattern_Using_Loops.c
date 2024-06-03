@@ -11,36 +11,37 @@ int main()
     {
         for (int j = 1; j <= size; j++)
         {
-            int min;
+            int distance;
 
             if (i < j)
             {
-                min = i;
+                distance = i;
             }
             else
             {
-                min = j;
+                distance = j;
             }
 
-            if (min < size - i + 1)
+            if (distance < size - i + 1)
             {
-                min = min;
+                distance = distance;
             }
             else
             {
-                min = size - i + 1;
+                distance = size - i + 1;
             }
 
-            if (min < size - j + 1)
+            if (distance < size - j + 1)
             {
-                min = min;
+                distance = distance;
             }
             else
             {
-                min = size - j + 1;
+                distance = size - j + 1;
             }
 
-            printf("%d ", n - min + 1);
+            int value = n - distance + 1;
+            printf("%d ", value);
         }
         printf("\n");
     }
