@@ -1,8 +1,4 @@
-            // else if (or_output > nor_output)
+            // if (i == 1 || j == 1 || j == n - 1 || i == n - 1)
             // {
-            //     max_and = or_output;
-            // }
-            // else
-            // {
-            //     max_and = nor_output;
+            //     printf("%d ", n - 1);
             // }
