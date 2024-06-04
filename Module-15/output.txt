@@ -1,11 +1,1 @@
-value of 0 index - 10
-address of 0 index - 0061FF0C
-address of 0 index - 0061FF0C
-address of 0 index - 0061FF10
-value of 0 index - 10
-Value of first index - 20
-Value of first index - 20
-20
-20
-20
-20
+5
