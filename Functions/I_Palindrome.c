@@ -4,13 +4,11 @@ int reversed = 0;
 
 void reverseNumber(int n)
 {
-    if (n != 0)
-    {
-        int remainder = n % 10;
-        reversed = reversed * 10 + remainder;
-        printf("%d", remainder);
-        reverseNumber(n / 10);
-    }
+    if (n == 0)
+        return;
+    int remainder = n % 10;
+    reversed = reversed * 10 + remainder;
+    reverseNumber(n / 10);
 }
 
 int main()
@@ -20,6 +18,7 @@ int main()
 
     reversed = 0;
     reverseNumber(n);
+    printf("%d", reversed);
     printf("\n");
 
     if (n == reversed)
